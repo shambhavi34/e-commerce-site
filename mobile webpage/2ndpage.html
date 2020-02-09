@@ -1,0 +1,100 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MOBILES</title>
+	<link rel="stylesheet" href="style0.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1>MOBILES</h1>
+				</div>
+				<nav>
+					<h4>CALL US NOW</h4><h4>
+					TOLL FREE 0023-456-789</h4>
+				</nav>
+				</div>
+			</header>
+
+			<section id="tab">
+				<div class="container">
+					<ul>
+						<li>Home</li>
+						<li>Features</li>
+						<li>Services</li>
+						<li>About</li>
+					</ul>
+					<form>
+						<input type="search"  id="filterInput"  placeholder="Search">
+						<button type="submit" class="button_1">Submit</button>
+					</form>
+				</div>
+			</section>
+			<section id="showcase">
+	
+					<div class="grid-container">
+  <div class="grid-item"><img src="redmi note 8 pro.jpg";><p class="small"><h4>REDMI NOTE 8 PRO</h4><h5>Rs.13,999</h5></p><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><form><button type="submit" class="button_1">Buy</button></form></div>
+  <div class="grid-item"><img src="xioami mi3.jpg"><h4>XIAOMI MI3</h4><h5>Rs.14,999</h5><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><form><button type="submit" class="button_1">Buy</button></form></div>
+  <div class="grid-item"><img src="one plus 7.jpg"><h4>ONE PLUS 7</h4><h5>Rs.34,999</h5><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><form><button type="submit" class="button_1">Buy</button></form></div>
+  <div class="grid-item"><img src="one plus 7t.jpg"><h4>ONE PLUS 7T PRO</h4><h5>Rs.42,999</h5><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span><form><button type="submit" class="button_1">Buy</button></form></div>
+  <div class="grid-item"><img src="galaxy note10.jpg"><h4>GALAXY NOTE 10</h4><h5>Rs.73,999</h5><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><form><button type="submit" class="button_1">Buy</button></form></div>
+  <div class="grid-item"><img src="iphone.jpg"><h4>IPHONE 11 PRO MAX</h4><h5>Rs.1,11,999</h5><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span><form><button type="submit" class="button_1">Buy</button></form></div>
+</div>
+</section>
+		</body>
+		<script>
+ let filterInput=document.getElementById('filterInput');
+
+	filterInput.addEventListener('keyup', filterNames);
+
+	function filterNames(){
+
+	 let filterValue=document.getElementById('filterInput').value.toUpperCase();
+
+	let ul=document.getElementById('names');
+
+		let li=ul.querySelectorAll('li.collection-item');
+
+		for(let i=0;i<li.length;i++){
+			let a=li[i].getElementsByTagName('a')[0];
+
+			if(a.innerHTML.toUpperCase().indexOf(filterValue)>-1){
+				li[i].style.display='';
+			}else{
+				li[i].style.display='none';
+			}
+		}
+
+	}
+
+
+</html>
